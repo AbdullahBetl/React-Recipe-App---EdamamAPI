@@ -19,7 +19,10 @@ const Banner = () => {
         <h3>Good {greeting}</h3>
         <h4>Something smells delicious. Time for a yummy {meal}!</h4>
       </Container>
+
     </Container>
+
+
   );
 };
 

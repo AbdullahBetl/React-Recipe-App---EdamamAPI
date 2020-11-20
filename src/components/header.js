@@ -6,12 +6,11 @@ const Header = () => {
   return (
     <Container className="header">
       <Row className="header-row">
-        <Col className="logo pl-0">YummeFood</Col>
+        <Col className="logo pl-0">Foodie Recipes</Col>
         <a
           href="https://github.com/AbdullahBetl"
           target="_blank"
         >
-          <GitHubIcon className="logo" />
         </a>
       </Row>
     </Container>

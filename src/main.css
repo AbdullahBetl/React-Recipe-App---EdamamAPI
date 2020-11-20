@@ -1,11 +1,7 @@
-@import "~bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Nunito:wght@600&family=Open+Sans:wght@400;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-@import "variables";
-
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 body {
-  background-color: $bg;
+  background-color: #f6f5f5;
   font-family: "Nunito", sans-serif;
 }
 
@@ -15,39 +11,43 @@ body {
 }
 
 .logo {
-font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 2rem;
-  color: $blue-dark;
+  color: #00334e;
   line-height: 4.6875rem;
-  svg {
-    fill: $blue-dark;
-    margin: auto 0;
-  }
+}
+
+.logo svg {
+  fill: #00334e;
+  margin: auto 0;
 }
 
 .search {
   max-width: 59.375rem;
   height: 2.5rem;
   margin: 2.25rem auto;
-  button {
-    background-color: $pink;
-    border: none;
-  }
-  button:hover,
-  button:active,
-  button:focus {
-    background-color: darken($color: $pink, $amount: 10);
-  }
+}
+
+.search button {
+  background-color: black;
+  border: none;
+}
+
+.search button:hover,
+.search button:active,
+.search button:focus {
+  background-color: black;
 }
 
 .banner {
   width: fit-content;
-  img {
-    height: 18.75rem;
-    width: 59.375rem;
-    object-fit: cover;
-    margin: 0 auto;
-  }
+}
+
+.banner img {
+  height: 18.75rem;
+  width: 59.375rem;
+  object-fit: cover;
+  margin: 0 auto;
 }
 
 .foodcard {
@@ -57,6 +57,7 @@ font-family: 'Lato', sans-serif;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
   transition: ease 0.3s;
 }
+
 .foodcard:hover {
   transform: scale(1.02);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
@@ -66,9 +67,9 @@ font-family: 'Lato', sans-serif;
   font-size: 0.75rem;
   padding: 4px 6px;
   border-radius: 20px;
-  background-color: $pink;
+  background-color: #9A33FF;
   width: fit-content;
-  color: $white;
+  color: #ffffff;
   position: absolute;
   right: -16px;
   top: 8px;
@@ -76,17 +77,17 @@ font-family: 'Lato', sans-serif;
 
 .title {
   font-size: 1rem;
-  color: $blue-dark;
+  color: #00334e;
 }
 
 .cal {
   font-size: 0.75rem;
-  color: $blue-light;
+  color: #145374;
 }
 
 .serving {
   font-size: 0.875rem;
-  color: $blue-light;
+  color: #145374;
 }
 
 .list {
@@ -98,7 +99,7 @@ font-family: 'Lato', sans-serif;
 
 .loader {
   z-index: 100 !important;
-  color: $white;
+  color: #ffffff;
 }
 
 .ta-end {
@@ -109,7 +110,7 @@ font-family: 'Lato', sans-serif;
   width: 59.375rem;
   position: absolute;
   bottom: 0;
-  color: $white;
+  color: #ffffff;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -117,11 +118,11 @@ font-family: 'Lato', sans-serif;
   position: fixed;
   bottom: 2rem;
   left: 2rem;
-  color: $blue-dark !important;
+  color: #00334e !important;
 }
 
 .recipe-modal {
-  background-color: $white;
+  background-color: #ffffff;
   height: auto;
   max-height: 95vh;
   position: absolute;
@@ -138,11 +139,11 @@ font-family: 'Lato', sans-serif;
 
 .label {
   font-size: 1.5rem;
-  color: $blue-dark;
+  color: #00334e;
 }
 
 .bgs-blue {
-  background-color: $blue-dark;
+  background-color: #00334e;
 }
 
 .img-modal {
@@ -167,12 +168,12 @@ font-family: 'Lato', sans-serif;
 .ing-body {
   padding: 0.75rem;
   font-size: 0.75rem;
-  color: $blue-light;
+  color: #145374;
 }
 
 .ing {
   font-size: 1rem;
-  color: $blue-dark;
+  color: #00334e;
 }
 
 .ing-container {
@@ -184,12 +185,12 @@ font-family: 'Lato', sans-serif;
 .svg {
   opacity: 0.6;
   height: 1.2rem !important;
-  fill: $pink !important;
+  fill: #9A33FF !important;
 }
 
 .link {
   font-size: 0.875rem;
-  color: $pink;
+  color: #9A33FF;
   text-decoration: none;
 }
 
@@ -199,45 +200,41 @@ font-family: 'Lato', sans-serif;
 
 .footer {
   padding: 2rem;
-  background-color: $pink;
-  .text {
-    font-size: 1rem;
-    color: $white;
-  }
-  div {
-    text-align: center;
-  }
+  background-color: #9A33FF;
 }
+
+.footer .text {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.footer div {
+  text-align: center;
+}
+
 @media screen and (max-width: 995px) {
-  .banner {
-    img {
-      width: 100%;
-    }
+  .banner img {
+    width: 100%;
   }
   .greeting {
     width: 90%;
   }
-
   .list {
     width: 90%;
   }
-
   .recipe-modal {
     width: 90%;
     height: 80%;
-    .label {
-      font-size: 1rem;
-    }
   }
-
+  .recipe-modal .label {
+    font-size: 1rem;
+  }
   .header-row {
     margin: 0 0.75rem;
   }
-
   .ta-end {
     width: fit-content;
   }
-
   .row-to-column {
     flex-direction: column;
     align-items: center;
